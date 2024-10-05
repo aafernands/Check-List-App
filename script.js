@@ -1,5 +1,4 @@
 
-alert("Worked")
-function click() {
-    alert("Hello")
+function firstClick(message) {
+    alert(message);
 }
