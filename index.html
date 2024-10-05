@@ -7,14 +7,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 >JavaScript Learning</h1>
+    <h1>JavaScript Learning</h1>
+  <hr>
+  
+    <!-- Container for input and buttons -->
+    <div id="inputContainer">
+      <!-- Text input where the user types -->
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Type something"
+        style="width: 100%; padding: 10px; margin-bottom: 10px"
+      />
 
-    <input type="text" id="userInput" placeholder="Type Something" />
+      <!-- Button to submit and display the result -->
+      <button onclick="displayInput()">Submit</button>
 
-    <button onclick="firstClick('Hello World!')">Click</button>
-    <button onclick="deleteInput()">DELETE</button>
-   
-   <div class="divResults" id="resultContainer"></div>
+      <!-- Button to delete all user input from the result container -->
+      <button class="delete-btn" onclick="deleteInput()">Delete</button>
+
+      <!-- This is where we will append the new <p> elements -->
+      <div id="resultContainer"></div>
+    </div>
 
     <script src="script.js"></script>
   </body>

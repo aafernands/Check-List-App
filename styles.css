@@ -1,13 +1,77 @@
-body {
-    background-color: rgb(201, 201, 201);
-}
+     /* Basic Reset */
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-.divResults {
-    background-color: black;
-    color: red;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* Body styles to center content */
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
 
-}
+    /* Container for the input and buttons */
+    #inputContainer {
+        width: 100%;
+        max-width: 600px; /* Responsive max width */
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive result container */
+    #resultContainer {
+        margin-top: 20px;
+        max-height: 300px; /* Maximum height with scroll */
+        overflow-y: auto; /* Enable scrolling if content exceeds max height */
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #fafafa;
+        border-radius: 5px;
+    }
+
+    /* Style for the p tags inside result container */
+    #resultContainer p {
+        margin: 10px 0;
+        padding: 8px;
+        background-color: #e0f7fa;
+        border-radius: 5px;
+    }
+
+    /* Style for buttons */
+    button {
+        padding: 10px 15px;
+        margin: 5px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    /* Delete button styling */
+    button.delete-btn {
+        background-color: #f44336;
+    }
+
+    button.delete-btn:hover {
+        background-color: #e53935;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+        #inputContainer {
+            max-width: 100%;
+        }
+    }
