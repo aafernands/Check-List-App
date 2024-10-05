@@ -1,4 +1,7 @@
 
 function firstClick(message) {
-    alert(message);
+
+var inputText = document.getElementById("userInput").value
+
+    alert(inputText);
 }
