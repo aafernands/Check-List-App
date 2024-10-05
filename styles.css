@@ -1,51 +1,54 @@
-     /* Basic Reset */
-     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    /* Body styles to center content */
+    /* Basic styles */
     body {
         font-family: Arial, sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        padding: 20px;
         background-color: #f0f0f0;
+        padding: 20px;
     }
 
-    /* Container for the input and buttons */
     #inputContainer {
         width: 100%;
-        max-width: 600px; /* Responsive max width */
+        max-width: 600px;
         background-color: white;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* Responsive result container */
     #resultContainer {
         margin-top: 20px;
-        max-height: 300px; /* Maximum height with scroll */
-        overflow-y: auto; /* Enable scrolling if content exceeds max height */
+        max-height: 300px;
+        overflow-y: auto;
         padding: 10px;
         border: 1px solid #ddd;
         background-color: #fafafa;
         border-radius: 5px;
     }
 
-    /* Style for the p tags inside result container */
     #resultContainer p {
         margin: 10px 0;
         padding: 8px;
         background-color: #e0f7fa;
         border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    /* Style for buttons */
+    /* Delete button styling */
+    .delete-entry {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        padding: 0 8px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
     button {
         padding: 10px 15px;
         margin: 5px 0;
@@ -56,22 +59,10 @@
         cursor: pointer;
     }
 
-    button:hover {
-        background-color: #45a049;
-    }
-
-    /* Delete button styling */
     button.delete-btn {
         background-color: #f44336;
     }
 
     button.delete-btn:hover {
         background-color: #e53935;
-    }
-
-    /* Responsive layout */
-    @media (max-width: 768px) {
-        #inputContainer {
-            max-width: 100%;
-        }
     }
